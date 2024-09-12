@@ -1,0 +1,42 @@
+{% extends "auth/header_provincias.html" %}
+{% block content %}
+        <div class="contenido">
+            <div id="contenido1">
+                <p>
+                    Tierra del Fuego, provincia argentina en el extremo sur del país, es un paraíso de naturaleza salvaje y aventura.
+                    Ushuaia, su capital, es conocida como "El Fin del Mundo", rodeada de montañas, glaciares y el Canal Beagle. El Parque
+                    Nacional Tierra del Fuego ofrece paisajes espectaculares para el trekking y la observación de fauna como pingüinos y
+                    cóndores. La provincia es un punto de partida para expediciones antárticas y cruceros a la Antártida. Su historia
+                    incluye la cultura de los pueblos originarios y la colonización europea, visible en sitios como el Museo del Presidio y
+                    la Bahía de los Náufragos.
+                </p>
+            </div>
+            <div class="ful-img" id="fulImgBox">
+                <img src="{{url_for('static', filename='img_provincias/tierra_del_fuego/img2.jpeg')}}" alt="" id="fulImg">
+                <span onclick="closeImg()">X</span>
+            </div>
+            <div id="contenido2">
+                <img src="{{url_for('static', filename='img_provincias/tierra_del_fuego/img1.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/tierra_del_fuego/img2.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/tierra_del_fuego/img3.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/tierra_del_fuego/img4.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/tierra_del_fuego/img5.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/tierra_del_fuego/img6.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/tierra_del_fuego/img7.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/tierra_del_fuego/img8.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/tierra_del_fuego/img9.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/tierra_del_fuego/img10.jpeg')}}" onclick="openImg(this.src)" alt="">
+            </div>
+            <div id="contenido3">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3378999.6529909987!2d-67.41643177912269!3d-54.2099290649837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbc4c22cfd9432921%3A0x80ee54358cf0d88d!2sTierra%20del%20Fuego!5e0!3m2!1ses-419!2sar!4v1715860124416!5m2!1ses-419!2sar" width="1200" height="495" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div id="contenido4">
+                <div class="clima" id="cont_d516d9ba6fc27363a54f2e2394428779"><script type="text/javascript" async src="https://www.meteored.com.ar/wid_loader/d516d9ba6fc27363a54f2e2394428779"></script></div>
+            <div id="contenido5">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d107195.89334040215!2d-68.85562654714896!3d-32.901561156689844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRestaurantes!5e0!3m2!1ses-419!2sar!4v1715697483990!5m2!1ses-419!2sar"
+                    width="1200" height="495" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+{% endblock %}

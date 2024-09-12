@@ -1,0 +1,42 @@
+{% extends "auth/header_provincias.html" %}
+{% block content %}
+        <div class="contenido">
+            <div id="contenido1">
+                <p>
+                    Santa Cruz, provincia argentina en la región patagónica, es un espectáculo de contrastes naturales. Desde la
+                    majestuosidad de los glaciares en el Parque Nacional Los Glaciares hasta la inmensidad de la estepa patagónica, ofrece
+                    paisajes de una belleza única. Su capital, Río Gallegos, es un centro cultural y administrativo con influencias de la
+                    historia de la exploración antártica. La provincia es rica en recursos naturales, destacando la industria petrolera y
+                    minera. La pesca deportiva en sus costas y ríos, junto con la observación de fauna como pingüinos y ballenas, son
+                    atractivos turísticos imperdibles.
+                </p>
+            </div>
+            <div class="ful-img" id="fulImgBox">
+                <img src="{{url_for('static', filename='img_provincias/santa_cruz/img2.jpeg')}}" alt="" id="fulImg">
+                <span onclick="closeImg()">X</span>
+            </div>
+            <div id="contenido2">
+                <img src="{{url_for('static', filename='img_provincias/santa_cruz/img1.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/santa_cruz/img2.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/santa_cruz/img3.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/santa_cruz/img4.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/santa_cruz/img5.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/santa_cruz/img6.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/santa_cruz/img7.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/santa_cruz/img8.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/santa_cruz/img9.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/santa_cruz/img10.jpeg')}}" onclick="openImg(this.src)" alt="">
+            </div>
+            <div id="contenido3">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5323224.646255846!2d-69.11551654298277!3d-49.3477803453773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdb6fbfdc37f535f%3A0xe4b90d77fdc8237c!2sSanta%20Cruz!5e0!3m2!1ses-419!2sar!4v1715777872672!5m2!1ses-419!2sar" width="1200" height="495" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div id="contenido4">
+                <div class="clima" id="cont_69538c35f92162ba00992f9701adde87"><script type="text/javascript" async src="https://www.meteored.com.ar/wid_loader/69538c35f92162ba00992f9701adde87"></script></div>
+            <div id="contenido5">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d107195.89334040215!2d-68.85562654714896!3d-32.901561156689844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRestaurantes!5e0!3m2!1ses-419!2sar!4v1715697483990!5m2!1ses-419!2sar"
+                    width="1200" height="495" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+{% endblock %}

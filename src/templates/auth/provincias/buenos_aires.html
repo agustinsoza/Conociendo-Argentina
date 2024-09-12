@@ -1,0 +1,42 @@
+{% extends "auth/header_provincias.html" %}
+
+{% block content %}
+            <div class="contenido">
+                <div id="contenido1">
+                    <p>
+                        Buenos Aires, capital de Argentina, es una ciudad vibrante y cosmopolita que fusiona historia, cultura y modernidad. Sus
+                        icónicos barrios como Palermo, Recoleta y La Boca ofrecen una diversidad única de arquitectura, arte y gastronomía. El
+                        Teatro Colón y el Museo Nacional de Bellas Artes destacan en su escena cultural. La pasión por el tango se vive en
+                        milongas y espectáculos nocturnos. La Avenida 9 de Julio y el Obelisco son símbolos emblemáticos de la ciudad. Sus
+                        parques, plazas y paseos como el Puerto Madero y el Rosedal brindan espacios de esparcimiento y belleza. Buenos Aires es
+                        una ciudad que enamora y cautiva.
+                    </p>
+                </div>
+                <div class="ful-img" id="fulImgBox">
+                    <img src="{{url_for('static', filename='img_provincias/buenos_aires/img2.jpeg')}}" alt="" id="fulImg">
+                    <span onclick="closeImg()">X</span>
+                </div>
+                <div id="contenido2">
+                    <img src="{{url_for('static', filename='img_provincias/buenos_aires/img1.jpeg')}}" onclick="openImg(this.src)" alt="">
+                    <img src="{{url_for('static', filename='img_provincias/buenos_aires/img2.jpeg')}}" onclick="openImg(this.src)" alt="">
+                    <img src="{{url_for('static', filename='img_provincias/buenos_aires/img3.jpeg')}}" onclick="openImg(this.src)" alt="">
+                    <img src="{{url_for('static', filename='img_provincias/buenos_aires/img4.jpeg')}}" onclick="openImg(this.src)" alt="">
+                    <img src="{{url_for('static', filename='img_provincias/buenos_aires/img5.jpeg')}}" onclick="openImg(this.src)" alt="">
+                    <img src="{{url_for('static', filename='img_provincias/buenos_aires/img6.jpeg')}}" onclick="openImg(this.src)" alt="">
+                    <img src="{{url_for('static', filename='img_provincias/buenos_aires/img7.jpeg')}}" onclick="openImg(this.src)" alt="">
+                    <img src="{{url_for('static', filename='img_provincias/buenos_aires/img8.jpeg')}}" onclick="openImg(this.src)" alt="">
+                    <img src="{{url_for('static', filename='img_provincias/buenos_aires/img9.jpeg')}}" onclick="openImg(this.src)" alt="">
+                    <img src="{{url_for('static', filename='img_provincias/buenos_aires/img10.jpeg')}}" onclick="openImg(this.src)" alt="">
+                </div>
+                <div id="contenido3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4599658.712745581!2d-60.01661326304129!3d-37.242473822971704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95edbcb7595281d9%3A0x4ad309fcdcf0a144!2sProvincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1715697572442!5m2!1ses-419!2sar" width="1200" height="495" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div id="contenido4">
+                    <div class="clima" id="cont_7ea3a3c9670f0cd637f959767a00878f"><script type="text/javascript" async src="https://www.meteored.com.ar/wid_loader/7ea3a3c9670f0cd637f959767a00878f"></script></div>
+                </div>
+                <div id="contenido5">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d62492.5242158187!2d-58.44402107730579!3d-34.59508944904359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRestaurantes!5e0!3m2!1ses-419!2sar!4v1715695000290!5m2!1ses-419!2sar" width="1200" height="495" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
+                </div>
+            </div>
+{% endblock %}
+            

@@ -1,0 +1,43 @@
+{% extends "auth/header_provincias.html" %}
+{% block content %}
+        <div class="contenido">
+            <div id="contenido1">
+                <p>
+                    Jujuy, provincia argentina en el noroeste, es un tesoro de cultura, naturaleza y tradición. Su capital, San Salvador de
+                    Jujuy, irradia la riqueza de su pasado colonial en edificaciones como la Catedral y el Cabildo. La Quebrada de
+                    Humahuaca, Patrimonio de la Humanidad, deslumbra con sus montañas multicolores y pueblos ancestrales como Purmamarca y
+                    Tilcara. La provincia es cuna de la cultura andina, manifestada en festividades como la Fiesta de la Pachamama. La
+                    agricultura, minería y turismo son pilares económicos, destacándose la producción de tabaco y la ruta de las Salinas
+                    Grandes. Jujuy es un destino enriquecedor y fascinante.
+                </p>
+            </div>
+            <div class="ful-img" id="fulImgBox">
+                <img src="{{url_for('static', filename='img_provincias/jujuy/img2.jpeg')}}" alt="" id="fulImg">
+                <span onclick="closeImg()">X</span>
+            </div>
+            <div id="contenido2">
+                <img src="{{url_for('static', filename='img_provincias/jujuy/img1.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/jujuy/img2.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/jujuy/img3.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/jujuy/img4.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/jujuy/img5.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/jujuy/img6.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/jujuy/img7.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/jujuy/img8.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/jujuy/img9.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/jujuy/img10.jpeg')}}" onclick="openImg(this.src)" alt="">
+            </div>
+            <div id="contenido3">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3158150.2936869194!2d-65.56770503155525!3d-23.18221573261222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9404a1f6e75c0087%3A0x815e91b230ce4e79!2sJujuy!5e0!3m2!1ses-419!2sar!4v1715871207363!5m2!1ses-419!2sar" width="1200" height="495" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div id="contenido4">
+                <div class="clima" id="cont_e62ab42737c90b1bc9534df274b386cc"><script type="text/javascript" async src="https://www.meteored.com.ar/wid_loader/e62ab42737c90b1bc9534df274b386cc"></script></div>
+            </div>
+            <div id="contenido5">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d107195.89334040215!2d-68.85562654714896!3d-32.901561156689844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRestaurantes!5e0!3m2!1ses-419!2sar!4v1715697483990!5m2!1ses-419!2sar"
+                    width="1200" height="495" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+{% endblock %}

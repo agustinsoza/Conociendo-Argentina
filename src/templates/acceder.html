@@ -1,0 +1,51 @@
+{% include 'header.html' %}
+{% block title %}<title>Acceder</title>
+
+{% endblock %}
+
+    <main class="main-login">
+        <div class="img-login" id="login">
+        </div>
+        <div class="login">
+            <h2>¡Ingresá y compartinos tus lugares favoritos!</h2>
+            <form action="/acceder" class="formulario" id="formulario-login" method="POST">
+
+                <div class="formulario_grupo" id="grupo_usuario-login">
+                    <div class="formulario_grupo-input">
+                        <input type="text" class="formulario_input" name="user" id="user_log" placeholder="Usuario / Correo Electronico">
+                    </div>
+                </div>
+
+                <div class="formulario_grupo" id="grupo_pwd-login">
+                    <div class="formulario_grupo-input">
+                        <input type="password" class="formulario_input" name="pwd" id="pwd_log" placeholder="Contraseña">
+                    </div>
+                </div>
+                
+                <div class="formulario_grupo formulario_btn-login">
+                    <button type="submit" class="formulario_btn">Ingresar</button>
+                </div>
+            </form>
+            
+            <h4>No tenes cuenta? <a href="/registro">Registrate!</a></h4><br>
+        {% with messages = get_flashed_messages(with_categories=True) %}
+            {% if messages %}
+                {% for category, msg in messages %}
+                    <div class="{{category}} flash-message" id="flash-message">
+                        <div class="message">
+                                {{msg}}
+                        </div>
+                        <div class="close">
+                            <span onclick="closeMessage()">X</span>
+                        </div>
+                    </div> 
+                {% endfor %}         
+            {% endif %}
+        {% endwith %}
+        </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/5f172312ee.js" crossorigin="anonymous"></script>
+    <script src="{{url_for('static', filename='app.js')}}"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+{% extends "auth/header_provincias.html" %}
+{% block content %}
+        <div class="contenido">
+            <div id="contenido1">
+                <p>
+                    La Rioja, provincia argentina en el noroeste, fusiona historia, naturaleza y cultura en un escenario encantador. Su
+                    capital, La Rioja, es una mezcla de lo colonial y lo moderno, con monumentos como la Catedral y el Museo Folklórico. La
+                    provincia es hogar de paisajes deslumbrantes, desde los imponentes cerros de la Sierra de Famatina hasta los valles
+                    fértiles del oeste. La producción vitivinícola destaca en su economía, junto con la minería y la artesanía tradicional.
+                    La Rioja ofrece una experiencia auténtica de tradiciones ancestrales, gastronomía regional y hospitalidad que la
+                    convierten en un destino fascinante.
+                </p>
+            </div>
+            <div class="ful-img" id="fulImgBox">
+                <img src="{{url_for('static', filename='img_provincias/la_rioja/img2.jpeg')}}" alt="" id="fulImg">
+                <span onclick="closeImg()">X</span>
+            </div>
+            <div id="contenido2">
+                <img src="{{url_for('static', filename='img_provincias/la_rioja/img1.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/la_rioja/img2.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/la_rioja/img3.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/la_rioja/img4.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/la_rioja/img5.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/la_rioja/img6.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/la_rioja/img7.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/la_rioja/img8.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/la_rioja/img9.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/la_rioja/img10.jpeg')}}" onclick="openImg(this.src)" alt="">
+            </div>
+            <div id="contenido3">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4211739.632584337!2d-67.11503330094207!3d-29.90377028610869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942805ffc2fdfc9b%3A0xb7c177a5045d7360!2sLa%20Rioja!5e0!3m2!1ses-419!2sar!4v1715862387096!5m2!1ses-419!2sar" width="1200" height="495" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div id="contenido4">
+                <div class="clima" id="cont_6e3a4b833829e625f5053d2584d6d15b"><script type="text/javascript" async src="https://www.meteored.com.ar/wid_loader/6e3a4b833829e625f5053d2584d6d15b"></script></div>
+            <div id="contenido5">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d107195.89334040215!2d-68.85562654714896!3d-32.901561156689844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRestaurantes!5e0!3m2!1ses-419!2sar!4v1715697483990!5m2!1ses-419!2sar"
+                    width="1200" height="495" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+{% endblock %}

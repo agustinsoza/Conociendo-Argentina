@@ -1,0 +1,43 @@
+{% extends "auth/header_provincias.html" %}
+{% block content %}
+        <div class="contenido">
+            <div id="contenido1">
+                <p>
+                    El Chaco, provincia argentina en el noreste, es un tesoro de naturaleza y cultura ancestral. Su capital, Resistencia, es
+                    un crisol de tradiciones indígenas y modernidad. La provincia es hogar de una rica diversidad de fauna y flora en sus
+                    reservas naturales como El Impenetrable y Laguna Blanca. La producción de algodón, ganadería y agricultura son pilares
+                    económicos, junto con la artesanía chaqueña reconocida por sus tejidos y cerámicas. Las fiestas populares como la Fiesta
+                    Nacional del Algodón reflejan la identidad y el orgullo chaqueño. El Chaco es un destino auténtico que invita a
+                    descubrir sus raíces y su naturaleza exuberante.
+                </p>
+            </div>
+            <div class="ful-img" id="fulImgBox">
+                <img src="{{url_for('static', filename='img_provincias/chaco/img2.jpeg')}}" alt="" id="fulImg">
+                <span onclick="closeImg()">X</span>
+            </div>
+            <div id="contenido2">
+                <img src="{{url_for('static', filename='img_provincias/chaco/img1.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/chaco/img2.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/chaco/img3.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/chaco/img4.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/chaco/img5.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/chaco/img6.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/chaco/img7.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/chaco/img8.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/chaco/img9.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/chaco/img10.jpeg')}}" onclick="openImg(this.src)" alt="">
+            </div>
+            <div id="contenido3">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4355799.086626199!2d-60.49417741954885!3d-26.296384456588545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9440effae3c87247%3A0x4eaf96c0979eec95!2sChaco!5e0!3m2!1ses-419!2sar!4v1715947337224!5m2!1ses-419!2sar" width="1200" height="495" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div id="contenido4">
+                <div class="clima" id="cont_1671889b4e59d581e09c17dbba72f92d"><script type="text/javascript" async src="https://www.meteored.com.ar/wid_loader/1671889b4e59d581e09c17dbba72f92d"></script></div>
+            </div>
+            <div id="contenido5">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d107195.89334040215!2d-68.85562654714896!3d-32.901561156689844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRestaurantes!5e0!3m2!1ses-419!2sar!4v1715697483990!5m2!1ses-419!2sar"
+                    width="1200" height="495" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+{% endblock %}

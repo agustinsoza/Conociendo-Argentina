@@ -1,0 +1,43 @@
+{% extends "auth/header_provincias.html" %}
+{% block content %}
+            <div class="contenido">
+                <div id="contenido1">
+                    <p>
+                        Entre Ríos, provincia argentina en el litoral, encanta con su combinación de naturaleza exuberante y riqueza cultural.
+                        Su capital, Paraná, y la ciudad de Concordia exhiben la herencia histórica en sus edificios y museos. La provincia es
+                        atravesada por los ríos Paraná y Uruguay, ofreciendo paisajes ribereños, islas y playas fluviales. La actividad
+                        agrícola, ganadera y la producción de cítricos son ejes económicos, destacando la ruta de la naranja y la producción de
+                        arroz. El turismo termal en lugares como Gualeguaychú y la pesca deportiva en el río son atractivos únicos de Entre
+                        Ríos.
+                    </p>
+                </div>
+                <div class="ful-img" id="fulImgBox">
+                    <img src="{{url_for('static', filename='img_provincias/entre_rios/img2.jpeg')}}" alt="" id="fulImg">
+                    <span onclick="closeImg()">X</span>
+                </div>
+                <div id="contenido2">
+                    <img src="{{url_for('static', filename='img_provincias/entre_rios/img1.jpeg')}}" onclick="openImg(this.src)" alt="">
+                    <img src="{{url_for('static', filename='img_provincias/entre_rios/img2.jpeg')}}" onclick="openImg(this.src)" alt="">
+                    <img src="{{url_for('static', filename='img_provincias/entre_rios/img3.jpeg')}}" onclick="openImg(this.src)" alt="">
+                    <img src="{{url_for('static', filename='img_provincias/entre_rios/img4.jpeg')}}" onclick="openImg(this.src)" alt="">
+                    <img src="{{url_for('static', filename='img_provincias/entre_rios/img5.jpeg')}}" onclick="openImg(this.src)" alt="">
+                    <img src="{{url_for('static', filename='img_provincias/entre_rios/img6.jpeg')}}" onclick="openImg(this.src)" alt="">
+                    <img src="{{url_for('static', filename='img_provincias/entre_rios/img7.jpeg')}}" onclick="openImg(this.src)" alt="">
+                    <img src="{{url_for('static', filename='img_provincias/entre_rios/img8.jpeg')}}" onclick="openImg(this.src)" alt="">
+                    <img src="{{url_for('static', filename='img_provincias/entre_rios/img9.jpeg')}}" onclick="openImg(this.src)" alt="">
+                    <img src="{{url_for('static', filename='img_provincias/entre_rios/img10.jpeg')}}" onclick="openImg(this.src)" alt="">
+                </div>
+                <div id="contenido3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4108085.2067724364!2d-58.55490439686748!3d-32.271266684050744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a551ddba482fbf%3A0x69284bf0dcd46382!2sEntre%20R%C3%ADos!5e0!3m2!1ses-419!2sar!4v1715949472620!5m2!1ses-419!2sar" width="1200" height="495" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div id="contenido4">
+                    <div class="clima" id="cont_9e14eee050ddd58522d6ea63118f5ff3"><script type="text/javascript" async src="https://www.meteored.com.ar/wid_loader/9e14eee050ddd58522d6ea63118f5ff3"></script></div>
+                </div>
+                <div id="contenido5">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d107195.89334040215!2d-68.85562654714896!3d-32.901561156689844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRestaurantes!5e0!3m2!1ses-419!2sar!4v1715697483990!5m2!1ses-419!2sar"
+                        width="1200" height="495" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+{% endblock %}

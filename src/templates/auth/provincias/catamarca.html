@@ -1,0 +1,50 @@
+{% extends "auth/header_provincias.html" %}
+
+{% block content %}
+    <main class="main-provincia">
+        <div class="botones" id="botones">
+            <button id="btn1" onclick="mostrar1()">Descripción</button>
+            <button id="btn2" onclick="mostrar2()">Galería</button>
+            <button id="btn3" onclick="mostrar3()">Dónde queda?</button>
+            <button id="btn4" onclick="mostrar4()">Clima</button>
+        </div>
+        <div class="contenido">
+            <div id="contenido1">
+                <p>
+                    Catamarca, provincia argentina en el noroeste, cautiva con su riqueza histórica y natural. Su capital, San Fernando del
+                    Valle de Catamarca, resplandece con su arquitectura colonial y su vibrante cultura folclórica. La provincia es hogar de
+                    paisajes impresionantes, desde el imponente Nevado de Aconquija hasta los valles fértiles de Ambato y Santa María. Sus
+                    termas y spas naturales son destinos de relax y salud buscados por turistas y lugareños. La producción agrícola de
+                    olivos y vides destaca en su economía, junto con la minería y la artesanía tradicional. Catamarca ofrece una experiencia
+                    auténtica de historia, naturaleza y hospitalidad.
+                </p>
+            </div>
+            <div class="ful-img" id="fulImgBox">
+                <img src="{{url_for('static', filename='img_provincias/catamarca/img2.jpeg')}}" alt="" id="fulImg">
+                <span onclick="closeImg()">X</span>
+            </div>
+            <div id="contenido2">
+                <img src="{{url_for('static', filename='img_provincias/catamarca/img1.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/catamarca/img2.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/catamarca/img3.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/catamarca/img4.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/catamarca/img5.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/catamarca/img6.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/catamarca/img7.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/catamarca/img8.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/catamarca/img9.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/catamarca/img10.jpeg')}}" onclick="openImg(this.src)" alt="">
+            </div>
+            <div id="contenido3">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4303619.012489486!2d-67.22341731442313!3d-27.653000098207823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94205dc5020ad4bd%3A0x3257c3237d6cc2dc!2sCatamarca!5e0!3m2!1ses-419!2sar!4v1715858998144!5m2!1ses-419!2sar" width="1200" height="495" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div id="contenido4">
+                <div class="clima" id="cont_d1110fd680feb6738dfdae863244e0fd"><script type="text/javascript" async src="https://www.meteored.com.ar/wid_loader/d1110fd680feb6738dfdae863244e0fd"></script></div>
+            <div id="contenido5">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d107195.89334040215!2d-68.85562654714896!3d-32.901561156689844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRestaurantes!5e0!3m2!1ses-419!2sar!4v1715697483990!5m2!1ses-419!2sar"
+                    width="1200" height="495" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+{% endblock %}

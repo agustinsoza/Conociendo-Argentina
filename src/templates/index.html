@@ -1,0 +1,190 @@
+{% include 'header.html' %}
+{% block title %}
+<title>Conociendo Argentina</title>
+{% endblock %}
+<header class="header-index">
+    <div class="titulo-index">
+        <h1>Tenemos un país hermoso</h1>
+        <h2>y queremos que lo descubras con nosotros!</h2>
+    </div>
+    <div class="boton-header">
+        <h2><a href="#ancla">Ver más</a></h2>
+    </div>
+</header>
+<main class="main-index" id="ancla">
+    <div class="text-index">
+        <p>
+            Argentina consta de 23 provincias y cada una ellas 
+            se caracteriza por algo en especial, como los 
+            paisajes, la gastronomía y las actividades que 
+            podemos realizar allí. 
+        </p>
+    </div>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="grid text-center">
+                    <div class="g-col-2 g-col-md-4">
+                        <a href="auth/provincias/buenos_aires">
+                            <img src="{{url_for('static', filename='img/baires.jpeg')}}" alt="">
+                            <h4>Buenos Aires</h4>
+                        </a> 
+                    </div>
+                    <div class="g-col-2 g-col-md-4">
+                        <a href="auth/provincias/mendoza">
+                            <img src="{{url_for('static', filename='img/mendoza.jpg')}}" alt="">
+                            <h4>Mendoza</h4>
+                        </a>
+                    </div>
+                    <div class="g-col-2 g-col-md-4">
+                        <a href="auth/provincias/misiones">
+                            <img src="{{url_for('static', filename='img/misiones.jpg')}}" alt="">
+                            <h4>Misiones</h4>
+                        </a>
+                    </div>
+                    <div class="g-col-2 g-col-md-4">
+                        <a href="auth/provincias/corrientes">
+                            <img src="{{url_for('static', filename='img/corrientes.jpeg')}}" alt="">
+                            <h4>Corrientes</h4>
+                        </a>
+                    </div>
+                    <div class="g-col-2 g-col-md-4">
+                        <a href="auth/provincias/formosa">
+                            <img src="{{url_for('static', filename='img/formosa.jpeg')}}" alt="">
+                            <h4>Formosa</h4>
+                        </a>
+                    </div>
+                    <div class="g-col-2 g-col-md-4">
+                        <a href="auth/provincias/santa_cruz">
+                            <img src="{{url_for('static', filename='img/santa_cruz.jpeg')}}" alt="">
+                            <h4>Santa Cruz</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="grid text-center">
+                    <div class="g-col-2 g-col-sm-4">
+                        <a href="auth/provincias/san_luis">
+                            <img src="{{url_for('static', filename='img/san_luis.jpeg')}}" alt="">
+                            <h4>San Luis</h4>
+                        </a>
+                    </div>
+                    <div class="g-col-2 g-col-md-4">
+                        <a href="auth/provincias/s_del_estero">
+                            <img src="{{url_for('static', filename='img/s_del_estero.jpeg')}}" alt="">
+                            <h4>S. del Estero</h4>
+                        </a>
+                    </div>
+                    <div class="g-col-2 g-col-md-4">
+                        <a href="auth/provincias/catamarca">
+                            <img src="{{url_for('static', filename='img/catamarca.jpeg')}}" alt="">
+                            <h4>Catamarca</h4>
+                        </a>
+                    </div>
+                    <div class="g-col-2 g-col-md-4">
+                        <a href="auth/provincias/tierra_del_fuego">
+                            <img src="{{url_for('static', filename='img/tierra_del_fuego.jpeg')}}" alt="">
+                            <h4>Tierra del Fuego</h4>
+                        </a>
+                    </div>
+                    <div class="g-col-2 g-col-md-4">
+                        <a href="auth/provincias/la_pampa">
+                            <img src="{{url_for('static', filename='img/la_pampa.jpg')}}" alt="">
+                            <h4>La Pampa</h4>
+                        </a>
+                    </div>
+                    <div class="g-col-2 g-col-md-4">
+                        <a href="auth/provincias/la_rioja">
+                            <img src="{{url_for('static', filename='img/la_rioja.jpeg')}}" alt="">
+                            <h4>La Rioja</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="grid text-center">
+                    <div class="g-col-2 g-col-md-4">
+                        <a href="auth/provincias/chubut">
+                            <img src="{{url_for('static', filename='img/chubut.jpeg')}}" alt="">
+                            <h4>Chubut</h4>
+                        </a>
+                    </div>
+                    <div class="g-col-2 g-col-md-4">
+                        <a href="auth/provincias/tucuman">
+                            <img src="{{url_for('static', filename='img/tucuman.jpeg')}}" alt="">
+                            <h4>Tucumán</h4>
+                        </a>
+                    </div>
+                    <div class="g-col-2 g-col-md-4">
+                        <a href="auth/provincias/santa_fe">
+                            <img src="{{url_for('static', filename='img/santa_fe.jpeg')}}" alt="">
+                            <h4>Santa Fe</h4>
+                        </a>
+                    </div>
+                    <div class="g-col-2 g-col-md-4">
+                        <a href="auth/provincias/cordoba">
+                            <img src="{{url_for('static', filename='img/cordoba.jpeg')}}" alt="">
+                            <h4>Cordoba</h4>
+                        </a>
+                    </div>
+                    <div class="g-col-2 g-col-md-4">
+                        <a href="auth/provincias/jujuy">
+                            <img src="{{url_for('static', filename='img/jujuy.jpeg')}}" alt="">
+                            <h4>Jujuy</h4>
+                        </a>
+                    </div>
+                    <div class="g-col-2 g-col-md-4">
+                        <a href="auth/provincias/salta">
+                            <img src="{{url_for('static', filename='img/salta.jpeg')}}" alt="">
+                            <h4>Salta</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="grid text-center">
+                    <div class="g-col-2 g-col-md-4">
+                        <a href="auth/provincias/rio_negro">
+                            <img src="{{url_for('static', filename='img/rio_negro.jpeg')}}" alt="">
+                            <h4>Río Negro</h4>
+                        </a>
+                    </div>
+                    <div class="g-col-2 g-col-md-4">
+                        <a href="auth/provincias/san_juan">
+                            <img src="{{url_for('static', filename='img/san_juan.jpeg')}}" alt="">
+                            <h4>San Juan</h4>
+                        </a>
+                    </div>
+                    <div class="g-col-2 g-col-md-4">
+                        <a href="auth/provincias/neuquen">
+                            <img src="{{url_for('static', filename='img/neuquen.jpeg')}}" alt="">
+                            <h4>Neuquén</h4>
+                        </a>
+                    </div>
+                    <div class="g-col-2 g-col-md-4">
+                        <a href="auth/provincias/chaco">
+                            <img src="{{url_for('static', filename='img/chaco.jpeg')}}" alt="">
+                            <h4>Chaco</h4>
+                        </a>
+                    </div>
+                    <div class="g-col-2 g-col-md-4">
+                        <a href="auth/provincias/entre_rios">
+                            <img src="{{url_for('static', filename='img/entre_rios.jpeg')}}" alt="">
+                            <h4>Entre Rios</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</main>
+{% include 'footer.html' %}

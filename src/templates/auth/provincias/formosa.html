@@ -1,0 +1,43 @@
+{% extends "auth/header_provincias.html" %}
+{% block content %}
+            <div class="contenido">
+                <div id="contenido1">
+                    <p>
+                        Formosa, provincia argentina en la región nordeste, cautiva con su diversidad natural y cultural. Su riqueza se refleja
+                        en el imponente Parque Nacional Pilcomayo, hogar de una biodiversidad única. La ciudad de Formosa, su capital, mezcla
+                        historia y modernidad, con sitios como la Plaza San Martín y el Museo Histórico Provincial. Sus tradiciones indígenas,
+                        como la comunidad qom, enriquecen su identidad cultural. La pesca deportiva en el río Paraguay y la artesanía son
+                        pilares económicos y turísticos. La gastronomía fusiona sabores criollos e indígenas, destacando platos como el locro y
+                        las empanadas formoseñas.
+                    </p>
+                </div>
+                <div class="ful-img" id="fulImgBox">
+                    <img src="{{url_for('static', filename='img_provincias/formosa/img2.jpeg')}}" alt="" id="fulImg">
+                    <span onclick="closeImg()">X</span>
+                </div>
+                <div id="contenido2">
+                    <img src="{{url_for('static', filename='img_provincias/formosa/img1.jpeg')}}" onclick="openImg(this.src)" alt="">
+                    <img src="{{url_for('static', filename='img_provincias/formosa/img2.jpeg')}}" onclick="openImg(this.src)" alt="">
+                    <img src="{{url_for('static', filename='img_provincias/formosa/img3.jpeg')}}" onclick="openImg(this.src)" alt="">
+                    <img src="{{url_for('static', filename='img_provincias/formosa/img4.jpeg')}}" onclick="openImg(this.src)" alt="">
+                    <img src="{{url_for('static', filename='img_provincias/formosa/img5.jpeg')}}" onclick="openImg(this.src)" alt="">
+                    <img src="{{url_for('static', filename='img_provincias/formosa/img6.jpeg')}}" onclick="openImg(this.src)" alt="">
+                    <img src="{{url_for('static', filename='img_provincias/formosa/img7.jpeg')}}" onclick="openImg(this.src)" alt="">
+                    <img src="{{url_for('static', filename='img_provincias/formosa/img8.jpeg')}}" onclick="openImg(this.src)" alt="">
+                    <img src="{{url_for('static', filename='img_provincias/formosa/img9.jpeg')}}" onclick="openImg(this.src)" alt="">
+                    <img src="{{url_for('static', filename='img_provincias/formosa/img10.jpeg')}}" onclick="openImg(this.src)" alt="">
+                </div>
+                <div id="contenido3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5235079.68481617!2d-60.05487436750602!3d-25.034062627189964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x946a2cbe5ef40ca7%3A0xa0b446aec55c5d44!2sFormosa!5e0!3m2!1ses-419!2sar!4v1715776340275!5m2!1ses-419!2sar" width="1200" height="495" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div id="contenido4">
+                    <div class="clima" id="cont_15dfe61d51af90ea7ab1ebf2f6776613"><script type="text/javascript" async src="https://www.meteored.com.ar/wid_loader/15dfe61d51af90ea7ab1ebf2f6776613"></script></div>
+                </div>
+                <div id="contenido5">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d107195.89334040215!2d-68.85562654714896!3d-32.901561156689844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRestaurantes!5e0!3m2!1ses-419!2sar!4v1715697483990!5m2!1ses-419!2sar"
+                        width="1200" height="495" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+{% endblock %}

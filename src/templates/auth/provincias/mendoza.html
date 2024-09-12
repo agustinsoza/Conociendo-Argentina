@@ -1,0 +1,40 @@
+{% extends "auth/header_provincias.html" %}
+{% block content %}
+            <div class="contenido">
+                <div id="contenido1">
+                    <p>
+                        Mendoza, provincia argentina famosa por sus vinos y paisajes montañosos, ofrece una experiencia única. Sus extensos
+                        viñedos producen reconocidos vinos Malbec, atrayendo a aficionados y expertos en enología de todo el mundo. La ciudad de
+                        Mendoza, rodeada por la Cordillera de los Andes, combina la sofisticación urbana con la belleza natural. El Parque
+                        General San Martín es un oasis verde con lagos y senderos ideales para el descanso y la recreación. La región también
+                        ofrece actividades al aire libre como trekking, rafting y ski en invierno. Mendoza es un destino que deleita los
+                        sentidos y rejuvenece el espíritu.
+                    </p>
+                </div>
+                <div class="ful-img" id="fulImgBox">
+                    <img src="{{url_for('static', filename='img_provincias/mendoza/img2.jpeg')}}" alt="" id="fulImg">
+                    <span onclick="closeImg()">X</span>
+                </div>
+                <div id="contenido2">
+                    <img src="{{url_for('static', filename='img_provincias/mendoza/img1.jpeg')}}" onclick="openImg(this.src)" alt="">
+                    <img src="{{url_for('static', filename='img_provincias/mendoza/img2.jpeg')}}" onclick="openImg(this.src)" alt="">
+                    <img src="{{url_for('static', filename='img_provincias/mendoza/img3.jpeg')}}" onclick="openImg(this.src)" alt="">
+                    <img src="{{url_for('static', filename='img_provincias/mendoza/img4.jpeg')}}" onclick="openImg(this.src)" alt="">
+                    <img src="{{url_for('static', filename='img_provincias/mendoza/img5.jpeg')}}" onclick="openImg(this.src)" alt="">
+                    <img src="{{url_for('static', filename='img_provincias/mendoza/img6.jpeg')}}" onclick="openImg(this.src)" alt="">
+                    <img src="{{url_for('static', filename='img_provincias/mendoza/img7.jpeg')}}" onclick="openImg(this.src)" alt="">
+                    <img src="{{url_for('static', filename='img_provincias/mendoza/img8.jpeg')}}" onclick="openImg(this.src)" alt="">
+                    <img src="{{url_for('static', filename='img_provincias/mendoza/img9.jpeg')}}" onclick="openImg(this.src)" alt="">
+                    <img src="{{url_for('static', filename='img_provincias/mendoza/img10.jpeg')}}" onclick="openImg(this.src)" alt="">
+                </div>
+                <div id="contenido3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351400.291921068!2d-68.69980704627872!3d-34.88506640692671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9679745b5dd5fffd%3A0x902586f1d047824!2sMendoza!5e0!3m2!1ses-419!2sar!4v1715697395739!5m2!1ses-419!2sar" width="1200" height="495" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div id="contenido4">
+                    <div class="clima" id="cont_a09c2ef70bd3c39ce2fd7542a78458db"><script type="text/javascript" async src="https://www.meteored.com.ar/wid_loader/a09c2ef70bd3c39ce2fd7542a78458db"></script></div>
+                </div>
+                <div id="contenido5">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d107195.89334040215!2d-68.85562654714896!3d-32.901561156689844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRestaurantes!5e0!3m2!1ses-419!2sar!4v1715697483990!5m2!1ses-419!2sar" width="1200" height="495" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+{% endblock %}

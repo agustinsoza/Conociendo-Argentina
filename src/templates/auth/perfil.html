@@ -1,0 +1,155 @@
+{% include 'auth/header_perfil.html' %}
+
+{% block title %}<title>Datos del perfil</title>{% endblock %}
+
+    <div class="container col container-perfil">
+        <div class="form_update registro" id="form_update">
+            <h2>Modificar datos</h2>
+            <span onclick="closeFormUpdate()">X</span>
+            <form action="/update" class="formulario" id="formulario" method="POST">
+
+                <input hidden type="text" name="ID" value="{{usuario.ID}}">
+
+                <div class="formulario_grupo">
+                    <div class="formulario_grupo-input" id="grupo_nombre">
+                        <input type="text" class="formulario_input" name="nombre" id="nombre" value="{{usuario.Nombres}}">
+                        <h6 class="formulario_input-error">Los nombres no pueden contener números o símbolos.</h6>
+                    </div>
+                    <div class="formulario_grupo-input" id="grupo_apellido">
+                        <input type="text" class="formulario_input" name="apellido" id="apellido" value="{{usuario.Apellidos}}">
+                        <h6 class="formulario_input-error">Los apellidos no pueden contener números o símbolos.</h6>
+                    </div>
+                </div>
+
+                <div class="formulario_grupo">
+                    <div class="formulario_grupo-input" id="grupo_usuario">
+                        <input type="text" class="formulario_input" id="usuario" name="usuario" value="{{usuario.Usuario}}">
+                        <h6 class="formulario_input-error">El usuario debe tener de 4 a 16 dígitos y solo puede contener letras, números y guión bajo.</h6>
+                    </div>
+                    <div class="formulario_grupo-input" id="grupo_correo">
+                        <input type="email" class="formulario_input" name="correo" id="correo" value="{{usuario.Correo_Electronico}}">
+                        <h6 class="formulario_input-error">Ingrese un correo electrónico válido.</h6>
+                    </div>
+                </div>
+
+                <div class="formulario_grupo">
+                    <div class="formulario_grupo-input" id="grupo_pwd">
+                        <input type="password" class="formulario_input" name="pwd" id="pwd" value="{{usuario.Contraseña}}">
+                        <h6 class="formulario_input-error">La contraseña debe tener mayúsculas, minúsculas, números y caracteres.</h6>
+                    </div>
+                    <div class="formulario_grupo-input" id="grupo_pwd2">
+                        <input type="password" class="formulario_input" name="pwd2" id="pwd2" value="{{usuario.Contraseña}}">
+                        <h6 class="formulario_input-error">Ambas contraseñas deben ser iguales.</h6>
+                    </div>
+                </div>
+
+                <div class="formulario_grupo">
+                    <div class="formulario_grupo-input" id="birthdateError">
+                        <input class="formulario_input" type="date" id="birthdate" name="birthdate" value="{{usuario.Fecha_Nac}}">
+                        <h6 class="formulario_input-error">Debe ser mayor de edad para registrarse.</h6>
+                    </div>
+                    <div class="formulario_grupo-input">
+                        <select class="formulario_input" id="gender" name="gender">
+                            <option value="{{usuario.Sexo}}">{{usuario.Sexo}}</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Femenino">Femenino</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="formulario_grupo">
+                    <div class="formulario_grupo-input" id="grupo_provincia">
+                        <select class="formulario_input" id="province" name="province">
+                            <option value="{{usuario.Provincia}}">{{usuario.Provincia}}</option>
+                            <option value="Buenos Aires">Buenos Aires</option>
+                            <option value="Catamarca">Catamarca</option>
+                            <option value="Chaco">Chaco</option>
+                            <option value="Chubut">Chubut</option>
+                            <option value="Córdoba">Córdoba</option>
+                            <option value="Corrientes">Corrientes</option>
+                            <option value="Entre Ríos">Entre Ríos</option>
+                            <option value="Formosa">Formosa</option>
+                            <option value="Jujuy">Jujuy</option>
+                            <option value="La Pampa">La Pampa</option>
+                            <option value="La Rioja">La Rioja</option>
+                            <option value="Mendoza">Mendoza</option>
+                            <option value="Misiones">Misiones</option>
+                            <option value="Neuquén">Neuquén</option>
+                            <option value="Río Negro">Río Negro</option>
+                            <option value="Salta">Salta</option>
+                            <option value="San Juan">San Juan</option>
+                            <option value="San Luis">San Luis</option>
+                            <option value="Santa Cruz">Santa Cruz</option>
+                            <option value="Santa Fe">Santa Fe</option>
+                            <option value="Santiago del Estero">Santiago del Estero</option>
+                            <option value="Tierra del Fuego">Tierra del Fuego</option>
+                            <option value="Tucumán">Tucumán</option>
+                        </select>
+                    </div>
+                    <div class="formulario_grupo-input">
+                        <select class="formulario_input" id="city" name="city">
+                            <option value="{{usuario.Localidad}}">{{usuario.Localidad}}</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="formulario_grupo formulario_btn-registrar">
+                    <button type="submit" class="btn btn-primary btn-update">Confirmar modificaciones</button>
+                </div>
+            </form>
+        </div>
+        <div class="perfil">
+            <div class="col-3 foto-perfil">
+                <img class="" src="userpic/{{usuario.Foto_Perfil}}" alt="">
+                <div class="boton-foto">
+                    <form action="/updatefoto" method="post" enctype="multipart/form-data" id="photoForm">
+                        <label for="fileInput" class="btn btn-primary"> Cambiar foto</label>
+                        <input hidden type="file" name="foto" id="fileInput" onchange="cambiarFoto()">
+                    </form>      
+                    <a href="/delete_foto/{{usuario.ID}}" class="btn btn-danger" onclick="eliminarFoto(event)">Borrar foto</a>
+                </div>  
+            </div>
+            <div class="col-9 container-datos-perfil">
+                <h2>Datos de perfil</h2>
+                <div class="datos-perfil">
+                    <div class="datos">
+                        <h5><b>Nombre Completo:</b> {{usuario.Apellidos}}, {{usuario.Nombres}}</h5>
+                        <h5><b>Usuario:</b> {{usuario.Usuario}}</h5>
+                        <h5><b>Correo Electrónico:</b> {{usuario.Correo_Electronico}}</h5>
+                        <h5><b>Fecha de Nacimiento:</b> {{usuario.Fecha_Nac}}</h5>
+                    </div>
+                    <div class="datos">
+                        <h5><b>Sexo:</b> {{usuario.Sexo}}</h5>
+                        <h5><b>Provincia:</b> {{usuario.Provincia}}</h5>
+                        <h5><b>Localidad:</b> {{usuario.Localidad}}</h5>
+                        <h5><b>ID:</b> {{usuario.ID}}</h5>
+                    </div>
+                </div>
+                <div class="boton-editar">
+                        <a class="btn btn-primary" onclick="openFormUpdate()">Modificar datos</a>
+                        <a href="/delete/{{usuario.ID}}" class="btn btn-danger"  onclick="confirmarEnvio(event)">Eliminar usuario</a>
+                </div>
+            </div>
+        </div>
+        <br>
+    {% with messages = get_flashed_messages(with_categories=True) %}
+        {% if messages %}
+            {% for category, msg in messages %}
+                <div class="{{category}} flash-message" id="flash-message">
+                    <div class="message">
+                            {{msg}}
+                    </div>
+                    <div class="close">
+                        <span onclick="closeMessage()">X</span>
+                    </div>
+                </div> 
+            {% endfor %}         
+        {% endif %}
+    {% endwith %}
+</div>
+<script src="{{url_for('static', filename='app.js')}}"></script>
+
+
+
+

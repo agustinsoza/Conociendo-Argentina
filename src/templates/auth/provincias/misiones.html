@@ -1,0 +1,40 @@
+{% extends "auth/header_provincias.html" %}
+{% block content %}
+        <div class="contenido">
+            <div id="contenido1">
+                <p>
+                    Misiones es una provincia rica en historia y naturaleza. Hogar de las impresionantes Ruinas de San
+                    Ignacio, testigos de la época jesuítica. El Parque Nacional Iguazú alberga las majestuosas Cataratas del Iguazú,
+                    maravilla natural reconocida mundialmente. La región cuenta con una biodiversidad única, con selvas subtropicales donde
+                    habitan especies como el jaguar y el yaguareté. Las comunidades guaraníes preservan su cultura ancestral y comparten sus
+                    tradiciones. Además, Misiones es conocida por su producción de yerba mate, parte fundamental de la cultura local. Es un
+                    destino que combina historia, naturaleza y tradición en un entorno fascinante.
+                </p>
+            </div>
+            <div class="ful-img" id="fulImgBox">
+                <img src="{{url_for('static', filename='img_provincias/misiones/img2.jpeg')}}" alt="" id="fulImg">
+                <span onclick="closeImg()">X</span>
+            </div>
+            <div id="contenido2">
+                <img src="{{url_for('static', filename='img_provincias/misiones/img1.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/misiones/img2.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/misiones/img3.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/misiones/img4.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/misiones/img5.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/misiones/img6.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/misiones/img7.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/misiones/img8.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/misiones/img9.jpeg')}}" onclick="openImg(this.src)" alt="">
+                <img src="{{url_for('static', filename='img_provincias/misiones/img10.jpeg')}}" onclick="openImg(this.src)" alt="">
+            </div>
+            <div id="contenido3">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1821397.4176305195!2d-54.634894401779896!3d-26.921997051189795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f811245d4ce333%3A0xfb5d357febb15a1d!2sMisiones!5e0!3m2!1ses-419!2sar!4v1715708328240!5m2!1ses-419!2sar" width="1200" height="495" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div id="contenido4">
+                <div class="clima" id="cont_0b3846ef31fa33d37d3686508af8587a"><script type="text/javascript" async src="https://www.meteored.com.ar/wid_loader/0b3846ef31fa33d37d3686508af8587a"></script></div>
+            </div>
+            <div id="contenido5">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d20352.885838627986!2d-54.575910979946684!3d-25.607710750106765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRestaurantes!5e0!3m2!1ses-419!2sar!4v1715607362729!5m2!1ses-419!2sar" width="1200" height="495" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
+            </div>
+        </div>
+{% endblock %}

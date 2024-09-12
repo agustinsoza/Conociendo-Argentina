@@ -1,0 +1,1082 @@
+/* CONFIGURACION GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+html::-webkit-scrollbar:vertical {
+    width:0.4rem;
+}
+html::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+html::-webkit-scrollbar:horizontal {
+    height: 0;
+}
+html::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+html::-webkit-scrollbar-track {
+    border-radius: 1rem;  
+}
+
+body {
+    width: 100%;
+    background-color: #001B30;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style:normal;
+}
+
+/* ESTILO MENU-BAR */
+
+.menu-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .3rem 0 0 0;
+    background-color: rgba(139, 197, 244, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.logo img {
+    height: 3.5rem;
+    width: auto;
+    margin: 0 1rem;
+    padding: 0.1rem 0 0.3rem 0;
+}
+
+.checkbtn {
+    color: #001B30;
+    float: right;
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    margin: 0 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu li a {
+    display: block;
+}
+
+.nav>li {
+    float: left;
+    margin: 0.5rem;
+}
+
+.nav li ul {
+    display: none;
+    position: absolute;
+    background-color: rgb(70, 112, 146);
+    margin-top: 0.2rem;
+    padding: 0.5rem 0.3rem;
+    border-radius: 0.5rem;
+    height: 50vh;
+    overflow: auto;
+}
+
+.desplegable::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.desplegable::-webkit-scrollbar:vertical {
+    width:0.2rem;
+}
+
+.desplegable::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.desplegable::-webkit-scrollbar:horizontal {
+    height: 0;
+}
+
+.desplegable::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+.desplegable::-webkit-scrollbar-track {
+    border-radius: 1rem;  
+}
+
+.nav li:hover{
+    ul {
+        display: block;
+    }
+}
+
+.nav li a:hover {
+    color: white;
+}
+
+.menu a {
+    transition: all;
+    text-decoration: none;
+    color: #001B30;
+    font-size: 1.25rem;
+    margin: 0 1rem;
+    transition: all 0.2s;
+}
+
+.menu a:visited {
+    color:#001B30;
+}
+
+/* ESTILOS INDEX */
+
+.header-index {
+    width: 100%;
+    height: 105vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/img-header.jpg);
+    background-size: cover;
+}
+
+.titulo-index {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.titulo-index h1 {
+    font-weight:400;
+    font-style: normal;
+    font-size: 4rem;
+}
+
+.titulo-index h2 {
+    font-weight:400;
+    font-style: normal;
+    font-size: 2.25rem;
+}
+
+.boton-header {
+    margin: 2rem;
+}
+
+.boton-header a {
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(224, 224, 224, 0.5);
+    color: white;
+    padding: 0.7rem;
+    border-radius: 5px;
+    transition: all 0.2s ease-in;
+}
+
+.boton-header a:visited {
+    color: white;
+}
+
+.boton-header a:hover {
+    background-color: rgba(224, 224, 224);
+    color: #001B30;
+}
+
+/* main {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    -webkit-box-shadow: 0px 25px 60px 105px #001B30;
+    -moz-box-shadow: 0px 25px 60px 105px #001B30;
+    box-shadow: 0px 25px 60px 105px #001B30;
+} */
+
+.main-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    -webkit-box-shadow: 0px 25px 60px 105px #001B30;
+    -moz-box-shadow: 0px 25px 60px 105px #001B30;
+    box-shadow: 0px 25px 60px 105px #001B30;
+}
+
+.main-index p {
+    width: 70vw;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    text-align: center;
+    margin: 4rem;
+}
+
+.text-index {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.carousel {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    justify-content: center;
+    width: 100%;
+    margin: 4rem 0.5rem 2rem 0.5rem;
+    z-index: 1;
+}
+
+/* .carousel {
+    display: flex;
+    justify-content: space-between;
+} */
+
+/* .carousel-item {
+    grid-column-start: 2;
+    grid-column-end: 3;
+} */
+
+.carousel-control-prev {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 100%;
+}
+
+.carousel-control-next {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    width: 100%;
+}
+
+/* .carousel-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+} */
+
+.carousel-inner {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 100%;
+}
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+
+.g-col-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 15%;
+    height: 16rem;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.g-col-2 a {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.g-col-2 h4 {
+    font-size: 1.2rem;
+}
+
+.g-col-2 img {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.g-col-2 a:visited {
+    color: white;
+}
+
+/* ESTILO FOOTER */
+
+footer {
+    display: grid;
+    grid-template-columns: 25vw 50vw 25vw;
+    background-color: rgb(70, 112, 146);
+    width: 100%;
+    height: 8vh;
+}
+
+.logo-footer {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-footer img{
+    height: 6vh;
+    width: 50%;
+    margin-left: 1rem;
+}
+
+.redes {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+}
+
+.redes ul {
+    list-style: none;
+}
+
+.redes li {
+    display: inline;
+    margin: 2rem 0.5rem;
+    text-decoration: none;
+}
+
+.redes a{
+    color: #ffffff;
+}
+
+.redes a:visited {
+    color: #ffffff;
+}
+
+.copy {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy h6 {
+    font-size: 0.7rem;
+    margin: 1rem;
+    color: #ffffffb1;
+}
+
+
+/* ESTILOS LOGIN */
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 45vw 55vw;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    scroll-behavior: smooth;
+}
+
+.img-login {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 100vh;
+    width: 45vw;
+    background-image: url(img/login-img-11.png);
+    background-size: cover;
+}
+
+.login {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100vh;
+    width: 50vw;
+    -webkit-box-shadow: 25px 0px 60px 105px #001B30;
+    -moz-box-shadow: 25px 0px 60px 105px #001B30;
+    box-shadow: 25px 0px 60px 105px #001B30;
+}
+
+.main-login h2 {
+    font-weight:400;
+    font-style: normal;
+    font-size: 2.25rem;
+    text-align: center;
+    width: 70%;
+    margin-bottom: 0.5rem;
+}
+
+/* .main-login input {
+    background-color: #001B30;
+    color: white;
+    border: 2px #ffffff solid;
+    border-radius: 10px;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 15rem;
+    transition: 0.3s;
+} */
+
+.main-login button {
+    background-color: rgb(70, 112, 146);
+    color:#001B30;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin: 1rem;
+    width: 10rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.main-login button:hover {
+    background-color: #ffffff;
+}
+
+
+/* .main-login h4 {
+    font-weight: 500;
+    font-size: 1rem;
+} */
+
+.img-registro {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: 100vh;
+    width: 45vw;
+    background-image: url(img/login-img-22.png);
+    background-size: cover;
+}
+
+.registro {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100vh;
+    width: 50vw;
+    -webkit-box-shadow: 25px 0px 60px 105px #001B30;
+    -moz-box-shadow: 25px 0px 60px 105px #001B30;
+    box-shadow: 25px 0px 60px 105px #001B30;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario_grupo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.formulario_grupo-input {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario_input {
+    background-color: #001B30;
+    color: white;
+    border: solid 3px white;
+    border-radius: 10px;
+    width: 15rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    transition: 0.3s ease all;
+}
+
+.formulario_input:focus {
+    border: solid 3px #4a41ee;
+    outline: none;
+}
+.formulario_input-error{
+    color: rgb(235, 32, 32);
+    position: relative;
+    display: none;
+}
+.formulario_input-error-activo{
+    display: block;
+}
+.formulario_validacion-estado {
+    position: absolute;
+    right: 1rem;
+    z-index: 100;
+    opacity: 0;
+}
+.formulario_label {
+    margin: 1rem 0 0.5rem 0;
+}
+.formulario_label a{
+    color: #ffffff;
+}
+.formulario_label a:visited{
+    color: #ffffff;
+}
+.formulario_login-error {
+    background-color: rgba(235, 32, 32, 0.685);
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 300;
+    display: none;
+}
+.formulario_login-error-activo {
+    display: block;
+}
+.formulario_registro-error {
+    background-color: rgba(235, 32, 32, 0.685);
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 200;
+}
+.formulario_registro-check {
+    background-color: rgba(32, 235, 56, 0.685);
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 200;
+}
+.formulario_grupo-correcto .formulario_validacion-estado {
+    color: rgb(32, 235, 56);
+    opacity: 1;
+}
+.formulario_grupo-incorrecto .formulario_validacion-estado {
+    color: rgb(235, 32, 32);
+    opacity: 1;
+}
+.formulario_grupo-correcto .formulario_input {
+    border:solid 3px rgb(32, 235, 56);
+}
+.formulario_grupo-incorrecto .formulario_input {
+    border: solid 3px rgb(235, 32, 32);
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container .toggle-password {
+    position: absolute;
+    right: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+/* ESTILOS PROVINCIAS */
+
+.header-provincia {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.header-provincia.misiones {
+    background-image: url(img/img-header/misiones.jpg);
+    background-size: cover;
+}
+.header-provincia.buenos_aires {
+    background-image: url(img/img-header/baires.jpg);
+    background-size: cover;
+}
+.header-provincia.mendoza {
+    background-image: url(img/img-header/mendoza.webp);
+    background-size: cover;
+}
+.header-provincia.corrientes {
+    background-image: url(img/img-header/corrientes.jpg);
+    background-size: cover;
+}
+.header-provincia.formosa {
+    background-image: url(img/img-header/formosa.jpg);
+    background-size: cover;
+}
+.header-provincia.santa_cruz {
+    background-image: url(img/img-header/sta_cruz.jpeg);
+    background-size: cover;
+}
+.header-provincia.san_luis {
+    background-image: url(img/img-header/san_luis.jpeg);
+    background-size: cover;
+}
+.header-provincia.s_del_estero {
+    background-image: url(img/img-header/s_del_estero.jpeg);
+    background-size: cover;
+}
+.header-provincia.catamarca {
+    background-image: url(img/img-header/catamarca.webp);
+    background-size: cover;
+}
+.header-provincia.tierra_del_fuego {
+    background-image: url(img/img-header/tierra_del_fuego.jpg);
+    background-size: cover;
+}
+.header-provincia.la_pampa {
+    background-image: url(img/img-header/la_pampa.jpg);
+    background-size: cover;
+}
+.header-provincia.la_rioja {
+    background-image: url(img/img-header/la_rioja.jpeg);
+    background-size: cover;
+}
+.header-provincia.chubut {
+    background-image: url(img/img-header/chubut.jpeg);
+    background-size: cover;
+}
+.header-provincia.tucuman {
+    background-image: url(img/img-header/tucuman.jpeg);
+    background-size: cover;
+}
+.header-provincia.santa_fe {
+    background-image: url(img/img-header/sta_fe.jpg);
+    background-size: cover;
+}
+.header-provincia.cordoba {
+    background-image: url(img/img-header/cordoba.jpeg);
+    background-size: cover;
+}
+.header-provincia.jujuy {
+    background-image: url(img/img-header/jujuy.jpg);
+    background-size: cover;
+}
+.header-provincia.salta {
+    background-image: url(img/img-header/salta.jpg);
+    background-size: cover;
+}
+.header-provincia.rio_negro {
+    background-image: url(img/img-header/rio_negro.jpg);
+    background-size: cover;
+}
+.header-provincia.san_juan {
+    background-image: url(img/img-header/san_juan.jpeg);
+    background-size: cover;
+}
+.header-provincia.neuquen {
+    background-image: url(img/img-header/neuquen.jpeg);
+    background-size: cover;
+}
+.header-provincia.chaco {
+    background-image: url(img/img-header/chaco.jpeg);
+    background-size: cover;
+}
+.header-provincia.entre_rios {
+    background-image: url(img/img-header/entre_rios.jpeg);
+    background-size: cover;
+}
+
+.titulo-provincia {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 2rem;
+    color: white;
+}
+
+.titulo-provincia h1 {
+    font-weight:400;
+    font-style: normal;
+    font-size: 4rem;
+}
+
+.titulo-provincia h2 {
+    font-weight:400;
+    font-style: normal;
+    font-size: 3rem;
+}
+
+.main-provincia {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 25px 60px 180px #001B30;
+    -moz-box-shadow: 0px 25px 60px 180px #001B30;
+    box-shadow: 0px 25px 60px 180px #001B30;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-bottom: 2px #ffffff solid;
+    margin: 1rem 1rem 0 1rem;
+}
+.botones button{
+    background-color: #001B30;
+    color:#ffffff;
+    font-weight: 500;
+    border: none;
+    margin: 2rem 1rem 1rem 2rem;
+    font-size: 1.5rem;
+    transition: all 0.3s;
+}
+.botones button:hover {
+    color:#D6AA87;
+}
+
+.contenido {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-align: justify;
+    margin: 0.6rem;
+}
+#contenido1 {
+    display: flex;
+    align-items: center;
+    width: 63rem;
+    height: 33rem;
+    font-size: 1.8rem;
+}
+#btn1 {
+    color: #D6AA87;
+}
+#contenido2 {
+    display: none;
+    grid-template-columns: repeat(auto-fit, minmax(13rem,1fr));
+    margin: 1rem;
+    width: 80%;
+    gap: 2rem;
+}
+.ful-img {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+.ful-img img {
+    width: auto;
+    height: auto;
+    max-height: 75%;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+.ful-img span {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    font-size: 3rem;
+    cursor: pointer;
+}
+#contenido2 img {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#contenido2 img:hover {
+    transform: scale(1.08);
+}
+
+#contenido3 {
+    display: none;
+    justify-content: center;
+    margin: 1rem;
+}
+#contenido4 {
+    display: flex;
+    align-items: center;
+    height: 67vh;
+    display: none;
+    justify-content: center;
+    margin: 1rem;
+}
+.clima {
+    height: 30vh;
+    border-radius: 5px;
+}
+#contenido5 {
+    display: none;
+    justify-content: center;
+    margin: 1rem;
+}
+
+--PERFIL USUARIO
+
+.container-perfil {
+    display:grid;
+    margin-top: 5rem;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: row;
+    margin-top: 6rem;
+    background-color: rgba(183, 215, 242, 0.731);
+    width: 100%;
+    border-radius: 4rem;
+}
+
+.foto-perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin: 1rem;
+}
+.foto-perfil img {
+    max-width: 70%;
+    max-height: 250px;
+    border-radius: 50%;
+    margin-top: 1.5rem;
+}
+.boton-foto {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+    a {
+        margin: 0rem 0.5rem;
+    }
+}
+
+.container-datos-perfil{
+    display: flex;
+    flex-direction: column;
+}
+.container-datos-perfil h2 {
+    margin: 1rem;
+}
+
+.datos-perfil {
+    display: flex;
+    flex-direction: row;
+    border-top: #001B30 solid;
+    padding-top: 2rem;
+}
+.datos{
+    display: flex;
+    flex-direction: column;
+}
+.datos {
+    h5 {
+        margin: 1rem 1rem 2rem;
+}
+    b {
+        font-weight:bolder;
+        font-size: 1.4rem;
+    }
+}
+.boton-editar {
+    text-align: center;
+    width: 100%;
+    margin: 0.5rem 0;
+    
+    a {
+        padding: 0.5rem 1.5rem;
+        font-size: 1rem;
+        margin: 0rem 1rem;
+    }
+}
+
+.datos-update {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding-top: 2rem;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+.inputs {
+    h5 {
+        margin: 1rem 1rem 2rem;
+}
+    b {
+        font-weight:bolder;
+        font-size: 1.4rem;
+    }
+}
+.boton-editar {
+    text-align: center;
+    width: 100%;
+    margin: 0.5rem 0;
+    
+    a {
+        padding: 0.5rem 1.5rem;
+        font-size: 1rem;
+        margin: 0rem 1rem;
+    }
+}
+
+.btn-update {
+    margin-top: 1rem;
+}
+
+
+.form_update {
+    width: 50%;
+    height: 70%;
+    left: 25%;
+    background-color: #001b30f9;
+    border: white solid;
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    border-radius: 5rem;
+}
+.form_update span {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    font-size: 3rem;
+    cursor: pointer;
+    color: white;
+}
+
+.flash-message {
+    display: grid;
+    grid-template-columns: 90% 5% 5%;
+    width: auto;
+    color: #001b30f9;
+}
+
+.message {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 3rem;
+    font-weight: 800;
+}
+
+.close {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 1.5rem;
+    margin-right: 3rem;
+}
+
+.close:hover {
+    cursor: pointer;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 952px) {
+    .logo img {
+        height: 2.5rem;
+    }
+    .menu a {
+        font-size: 1rem;
+        margin: 0.2rem;
+    }
+    .titulo h1{
+        font-size: 3rem;
+    }
+    .titulo h2 {
+        font-size: 1.75;
+    }
+    .main-index p {
+        width: 80vw;
+       font-size: 1.5rem; 
+       margin: 2rem;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .logo img {
+        height: 2rem;
+    }
+    .menu>ul {
+        display: none;
+    }
+    .main-index p {
+        width: 80vw;
+       font-size: 1rem; 
+       margin: 2rem;
+    }
+}
