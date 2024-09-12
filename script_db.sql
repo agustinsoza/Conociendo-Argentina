@@ -14,6 +14,6 @@ create table usuarios (
     Localidad VARCHAR(100)
 );
 
-alter table usuarios add Foto_Perfil VARCHAR(500);
+alter table usuarios add Foto_Perfil VARCHAR(500) default "perfil.jpg";
 
 select * from usuarios;
